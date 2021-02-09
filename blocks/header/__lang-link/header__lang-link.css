@@ -1,0 +1,18 @@
+.header__lang-link{
+    color: white;
+    margin: 0;
+}
+.header__lang-link:last-of-type{
+    text-decoration: none;
+    margin-left: 18px;
+}
+@media screen and (max-width: 768px){
+    .header__lang-link{
+        font-size: calc((100vw*3/224) + (97px/7));
+    }
+}
+@media screen and (min-width: 768px){
+    .header__lang-link{
+        font-size: 24px;
+    }
+}

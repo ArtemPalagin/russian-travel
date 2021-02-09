@@ -1,0 +1,14 @@
+.header__logo-links{
+    margin: 0;
+    min-width: 65px;
+}
+@media screen and (max-width: 768px){
+    .header__logo-links{
+        margin-bottom: calc((100vw/-224) + (66px/7));
+    }
+}
+@media screen and (min-width: 768px){
+    .header__logo-links{
+        margin-bottom: 6px;
+    }
+}
