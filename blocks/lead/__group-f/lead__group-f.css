@@ -1,7 +1,0 @@
-.lead__group-f{
-    position: absolute;
-    left: calc(100%*0.02);
-    right: auto;
-    width: calc(100%*0.95);
-    bottom: calc(100%*0.265);
-}
