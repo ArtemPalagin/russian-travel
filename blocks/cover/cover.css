@@ -1,0 +1,33 @@
+.cover{
+    position: relative;
+    margin: auto;
+}
+/* если я меняю max-width: 768px на 767px, то на экране в 767px будто не работают стили, что я прописал в медиа запросе с max-width: 767px. Кажется, что max-width работает не включая последний пиксель. Да и в самом коде на странице у блоков на 767px в css коде медиа запрос не отображается, отображается только основной класс. Всё абсолютно также работает и с другими разрешениями (то есть если делать max-width: 1023px, то на 1023 пикселе этот медиа запрос тоже не работает)*/
+@media screen and (max-width: 768px){
+    .cover{
+        width: 100%;
+        min-height: calc((100vw - 16.8px)*0.625);
+        margin-top: calc((100vw*3/56) + (342px/7));
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .cover{
+        width: 100%;
+        min-height: calc((100vw - 16.8px)*0.625);
+        margin-top: calc((100vw/128) + 84px);
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+    .cover{
+        width: calc((100%*5/8) + 377px);
+        min-height: calc((100vw - 16.8px)*5/8*0.625 + (377px*0.625));
+        margin-top: 92px;
+    }
+}
+@media screen and (min-width: 1280px){
+    .cover{
+        width: calc((100%*5/8) + 377px);
+        min-height: 740px;
+        margin-top: 92px;
+    }
+}
